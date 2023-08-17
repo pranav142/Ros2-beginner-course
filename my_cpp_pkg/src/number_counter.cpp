@@ -11,7 +11,7 @@ public:
         subscriber_ = this->create_subscription<example_interfaces::msg::Int64>("number", 10, std::bind(&NumberCounterNode::number_processing, this, std::placeholders::_1));
         publisher_ = this->create_publisher<example_interfaces::msg::Int64>("number_count", 10);
         service_ = this->create_service<example_interfaces::srv::SetBool>("reset_number_count", std::bind(&NumberCounterNode::reset_number_count_callback, this, std::placeholders::_1, std::placeholders::_2));
-        RCLCPP_INFO(this->get_logger(), "NumberCounter Node Cretaed");
+        RCLCPP_INFO(this->get_logger(), "NumberCounter Node Created");
     }
 
 private:

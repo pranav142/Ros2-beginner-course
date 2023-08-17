@@ -17,6 +17,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ComputeArea.srv"
   "srv/SetLedStatus.srv"
   "msg/SetLedStatus.msg"
+  "msg/Turtle.msg"
+  "msg/TurtlesAlive.msg"
 )
 
 ament_export_dependencies(rosidl_default_runtime)

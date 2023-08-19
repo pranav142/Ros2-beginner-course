@@ -24,7 +24,7 @@ public:
     {  
         publisher_ = this->create_publisher<my_robot_interfaces::msg::TurtlesAlive>("alive_turtles", 10);
         timer_ = this->create_wall_timer(std::chrono::milliseconds(5000), std::bind(&TurtleSpawnerNode::publish_alive_turtles, this));
-        RCLCPP_INFO(this->get_logger(), "Turtle Spawner Node Started");
+        RCLCPP_INFO(this->get_logger(), "The Turtle Spawner Node Has Started");
     }
 
 private:
